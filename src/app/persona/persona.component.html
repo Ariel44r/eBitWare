@@ -1,0 +1,26 @@
+<body>
+  <body>
+<div class="container">
+	<section id="content">
+		<div class="form">
+			<div>
+				<input type="text" #nombre placeholder="Nombre" required="" id="nombre"/>
+      </div>
+      <div>
+				<input type="text" #edad placeholder="Edad" required="" id="edad"/>
+      </div>
+      <div>
+				<input type="sexo" #sexo placeholder="Sexo" required="" id="sexo"/>
+      </div>
+      <div>
+				<input type="text" #peso placeholder="Peso" required="" id="peso"/>
+      </div>
+      <div>
+				<input type="text" #altura placeholder="Altura" required="" id="altura"/>
+			</div>
+		</div><!-- form -->
+		<div>
+      <input type="submit" value="click" (click)="instanciar(nombre.value, edad.value, sexo.value, peso.value, altura.value)"/>
+    </div>
+	</section><!-- content -->
+</div><!-- container -->
