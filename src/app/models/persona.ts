@@ -62,19 +62,11 @@ export class Persona {
     }
 
     esMayorDeEdad(): boolean {
-        if(this.edad >= 18){
-            return true;
-        } else {
-            return false;
-        }
+        return this.edad >= 18 ? true : false;
     }
 
     comprobarSexo(sexo: string): boolean {
-        if(this.sexo == sexo){
-            return true;
-        } else {
-            return false;
-        }
+        return this.sexo == sexo ? true : false;
     }
 
     toString(): PersonaConfig {
